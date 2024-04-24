@@ -1,8 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logoImg from "/nccnepal.png";
 
 const Header = () => {
+  const navigate=useNavigate()
+  const appointment=()=>{
+    navigate('/appointment')
+
+  }
   return (
     <>
       <div className="">
@@ -64,7 +69,8 @@ const Header = () => {
                 </li>
               </ul>
               <div className="ms-md-4">
-                <button className="btn  rounded-0  ">
+              
+                <button className="btn  rounded-pill" onClick={appointment}>
                   Book Appointment
                 </button>
               </div>

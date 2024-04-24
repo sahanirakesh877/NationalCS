@@ -2,8 +2,10 @@ import drBinayImg from "/drBinay.png";
 import drRakeshImg from "/drRakesh.png";
 import drRoshan from "/drRoshan.png";
 
-export const Docoterdata = [
+export const Doctordata = [
+    
     {
+        id:1,
         name: "Dr. Rakesh Shah",
         phoneNo: "+977-9817073670",
         email: "drrakeshshah@gmail.com",
@@ -53,7 +55,10 @@ export const Docoterdata = [
             }
         ]
     },
+
+
     {
+        id:2,
         name: "Dr.Binay Yadav",
         phoneNo: "+977-9861555976",
         email: "email",
@@ -102,7 +107,10 @@ export const Docoterdata = [
             }
         ]
     },
+
+
     {
+        id:3,
         name: "Dr.Roshan Shah",
         phoneNo: "+977-9844023522",
         email: "email",

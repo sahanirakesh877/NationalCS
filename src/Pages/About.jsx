@@ -1,73 +1,84 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 const About = () => {
   return (
     <>
-      <div className="container py-5">
+      <div className="container py-5 mx-auto px-4">
         <div className="row d-flex justify-content-between  align-items-center ">
+          <h2 className="serviceHead"> About Us</h2>
+          <p className="text-center pb-5">
+            {" "}
+            Our mission is to offer comprehensive and personalized solutions for
+            all colorectal health concerns, prioritizing open communication and
+            collaboration with our patients.
+          </p>
 
           <div className="col-md-6">
-            <h5 className="text-primary mb-4 "> About Us</h5>
-            <h4 className="abouthead mb-4">Make our patients happy by giving services.</h4>
+            <h3></h3>
             <p className="aboutp">
-              Welcome to <span className="text-danger fw-semibold   " >National Colorectal Center</span>, where compassionate care meets
-              surgical excellence in the field of colorectal surgery. Driven by
-              a commitment to our patients' well-being, we take pride in
-              providing comprehensive and personalized solutions for all
-              colorectal health concerns. National Colorectal Center is committed
-              to a patient-centric approach, where open communication and
-              collaboration between our team and patients are prioritized. We
-              believe in empowering our patients with knowledge, involving them
-              in the decision-making process, and providing comprehensive
-              support throughout their healthcare journey.
-            </p> 
-            <button className="btn  rounded-0  ">Explore More Case</button>
+              Welcome to{" "}
+              <span className="text-danger fw-semibold   ">
+                National Colorectal Center
+              </span>
+              , where compassionate care meets surgical excellence in the field
+              of colorectal surgery. Driven by a commitment to our patients'
+              well-being, we take pride in providing comprehensive and
+              personalized solutions for all colorectal health concerns.
+            </p>
+            <p className="">We </p>
+            <ul className="list-unstyled   ">
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Colorectal Surgery
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Colonoscopy
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Anorectal Surgery
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Endoscopic Procedures
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Colorectal Cancer Screening
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Polypectomy
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Proctology Services
+              </li>
+              <li>
+                {" "}
+                <FaCheckCircle className="me-2 text-success" />
+                Diagnostic Imaging
+              </li>
+              <li>
+                <FaCheckCircle className="me-2 text-success" />
+                Post-operative Care
+              </li>
+              <li>
+                {" "}
+                <FaCheckCircle className="me-2 text-success" />
+                Colostomy/Ileostomy Care
+              </li>
+            </ul>
           </div>
 
           <div className="col-md-6">
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img
-                  src='/constipation.png'
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Boat on Calm Water"
-                />
-
-                <img
-                  src="/fissure.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Wintry Mountain Landscape"
-                />
-              </div>
-
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                  src="/piles.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Mountains in the Clouds"
-                />
-
-                <img
-                  src="/fistula.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Boat on Calm Water"
-                />
-              </div>
-
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                  src="/polyp.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Waves at Sea"
-                />
-
-                <img
-                  src="/colCan.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Yosemite National Park"
-                />
-              </div>
-            </div>
+            <img
+              src="https://img.freepik.com/premium-photo/human-heart-diagram-3d-illustration_857340-1016.jpg?w=826"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
           </div>
         </div>
       </div>
