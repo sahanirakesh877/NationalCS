@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import { FaCheckCircle } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const About = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
+      <Helmet>
+        <title>About |NationalColorectalCenter</title>
+        <meta
+          name="description"
+          content=" Detail the various colorectal conditions your center specializes in diagnosing and treating, such as hemorrhoids, anal fissures, IBD, colon cancer, constipation, rectal cancer, fistulas, pilonidal sinus, rectal prolapse, and polyps"
+        />
+        <meta
+          name="keywords"
+          content="hemorrhoids,anal fissure,IBD,colon cancer,constipation,rectal cancer,fistula,pilonidal sinus,rectal prolapse,polyp,medical therapy,surgical procedures,laparoscopic surgery,anal fistula treatment,endoscopy,colorectal surgery,rectal prolapse"
+        />
+      </Helmet>
       <div className="container py-5 mx-auto px-4">
         <div className="row d-flex justify-content-between  align-items-center ">
           <h2 className="serviceHead"> About Us</h2>

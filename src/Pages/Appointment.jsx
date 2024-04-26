@@ -1,6 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
+
 
 const Appointment = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const initialFormData = {
     name: "",
     email: "",
@@ -27,9 +34,20 @@ const Appointment = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Appointment | NationalColorectalCenter</title>
+        <meta
+          name="description"
+          content=" Detail the various colorectal conditions your center specializes in diagnosing and treating, such as hemorrhoids, anal fissures, IBD, colon cancer, constipation, rectal cancer, fistulas, pilonidal sinus, rectal prolapse, and polyps"
+        />
+        <meta
+          name="keywords"
+          content="hemorrhoids,anal fissure,IBD,colon cancer,constipation,rectal cancer,fistula,pilonidal sinus,rectal prolapse,polyp,medical therapy,surgical procedures,laparoscopic surgery,anal fistula treatment,endoscopy,colorectal surgery,rectal prolapse"
+        />
+      </Helmet>
       <div className="appointment py-5">
         <div className="container">
-          <h3 className="text-center mb-2">MAKE AN APPOINTMENT</h3>
+          <h3 className="text-center mb-2 text-white font-semibold">MAKE AN APPOINTMENT</h3>
           <p className="text-center">
             Book your appointment now to consult with our experienced doctors
             and receive personalized care tailored to your needs. Whether you're

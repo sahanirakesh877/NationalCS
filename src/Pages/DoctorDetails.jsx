@@ -1,20 +1,36 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import { Doctordata } from "../Data/DoctorData";
+import { Helmet } from "react-helmet";
 
 const DoctorDetails = () => {
+  const { pathname } = useLocation();
   const { id } = useParams();
   console.log(id);
   const doctor = Doctordata.find((a) => a.id === parseInt(id));
-  console.log("doctor detasisls", doctor);
+ 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-md-6">
-        <div className="border doctorimg">
-
-       
+   <>
+  <Helmet>
+        <title>DoctorDetails | NationalColorectalCenter</title>
+        <meta
+          name="description"
+          content=" Detail the various colorectal conditions your center specializes in diagnosing and treating, such as hemorrhoids, anal fissures, IBD, colon cancer, constipation, rectal cancer, fistulas, pilonidal sinus, rectal prolapse, and polyps"
+        />
+        <meta
+          name="keywords"
+          content="hemorrhoids,anal fissure,IBD,colon cancer,constipation,rectal cancer,fistula,pilonidal sinus,rectal prolapse,polyp,medical therapy,surgical procedures,laparoscopic surgery,anal fistula treatment,endoscopy,colorectal surgery,rectal prolapse"
+        />
+      </Helmet>
+   
+     <div className="container mt-5">
+      <div className="row ">
+        <div className="col-md-6 pb-4 px-5  ">
+        <div className=" doctorimg ">
           <img
             src={doctor.img}
             alt={doctor.name}
@@ -22,7 +38,7 @@ const DoctorDetails = () => {
           />
            </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 px-5">
           <h2 className="fw-bold text-success">{doctor.name}</h2>
           <p>
             <strong>Specialist:</strong> {doctor.role}
@@ -58,7 +74,7 @@ const DoctorDetails = () => {
           </ul>
         </div>
       </div>
-      <div className="row mt-4">
+      <div className="row mt-4 px-5">
         <div className="col-md-6">
           <h3 className="text-uppercase  text-primary" >Journals:</h3>
           <hr  className="w-50 text-primary"/>
@@ -111,6 +127,7 @@ const DoctorDetails = () => {
    
       
     </div>
+   </>
   );
 };
 

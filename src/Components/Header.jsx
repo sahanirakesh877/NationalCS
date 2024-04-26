@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logoImg from "/nccnepal.png";
 
@@ -8,6 +8,15 @@ const Header = () => {
     navigate('/appointment')
 
   }
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const handleNavToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
   return (
     <>
       <div className="">
@@ -24,6 +33,7 @@ const Header = () => {
             <button
               className="navbar-toggler"
               type="button"
+              onClick={handleNavToggle}
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
@@ -33,40 +43,36 @@ const Header = () => {
               <span className="navbar-toggler-icon" />
             </button>
             <div
-              className="collapse navbar-collapse"
+             className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0  navlink">
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeNav}>
                   <Link className="nav-link active" aria-current="page" to="/">
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeNav}>
                   <Link className="nav-link" to="/service">
                     Service
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeNav}>
                   <Link className="nav-link" to="/doctor">
                    Doctor
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeNav}>
                   <Link className="nav-link" to="/about">
                     About
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeNav}>
                   <Link className="nav-link" to="/contact">
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item ">
-                  <Link className="nav-link" to="/blog">
-                    Blog
-                  </Link>
-                </li>
+               
               </ul>
               <div className="ms-md-4">
               

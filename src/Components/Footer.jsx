@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-md-start text-center mb-md-0 mb-2">
-              <p className="mb-0  fs-sm-3">© Copyright NationalColorectalSurgeon. All Rights Reserved</p>
+              <p className="mb-0  fs-sm-3 copyright">© Copyright NationalColorectalSurgeon. All Rights Reserved</p>
             </div>
             <div className="col-md-6 text-md-end text-center">
               <a href="https://technavata.com/" className="mb-0 text-decoration-none text-white">Design By: NAVATA TECH</a>

@@ -11,20 +11,19 @@
   --secBrand: #ef1827;
 }
 ul {
-  margin-top: 0; 
-  padding-left: 0; 
+  margin-top: 0;
+  padding-left: 0;
 }
-
 li {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
-
 p {
-  margin: 0; 
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
+
 /* header design start */
 .imglogo {
   height: 75px;
@@ -59,7 +58,6 @@ a {
   color: white;
   transition: all 0.2s ease-in;
 }
-
 .social-icons {
   font-size: 17px;
 }
@@ -89,7 +87,6 @@ a {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adjust the colors and opacity as needed */
 }
-
 .carousel-item img {
   height: 80vh;
   object-fit: cover;
@@ -112,11 +109,13 @@ a {
 /* About section end  */
 
 /* service section start */
-
 .serviceHead {
   font-weight: 700;
   text-align: center;
   padding: 10px 0;
+  color: #ef1827;
+}
+.servicetitle{
   color: #ef1827;
 }
 .card {
@@ -129,7 +128,6 @@ a {
   font-size: 20px;
   font-weight: 600;
 }
-
 .cardbox {
   width: auto;
   height: 69px;
@@ -138,7 +136,6 @@ a {
 
   text-align: left;
 }
-
 /* service section end  */
 
 /* doctor Profile start */
@@ -164,13 +161,12 @@ a {
   justify-content: center;
   color: #000;
 }
-
 .cover {
   top: 0;
   position: absolute;
   width: 100%;
   height: 100%;
-  
+
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -195,7 +191,6 @@ a {
   height: 100%;
   object-fit: contain;
 }
-
 .book:hover .cover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -215,17 +210,17 @@ a {
 }
 
 /* doctor detais */
-.doctorimg{
-  width: 400px;
-  height: 400px;
+.doctorimg {
   border-radius: 50%;
   background-color: skyblue;
+  height: 400px;
+  width: 400px;
 }
-.doctorimg img{
-  width: 100%;
-  height:100%;
-  object-fit: contain;
 
+.doctorimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* doctor Profile end */
@@ -246,7 +241,6 @@ a {
   height: auto;
   object-fit: cover;
 }
-
 .logotextF {
   color: var(--brandcolor);
   font-weight: 600;
@@ -267,48 +261,47 @@ a {
 .lastfooter {
   color: rgb(226, 215, 215);
 }
-
+/* footer section end */
 
 /* testimonials start  */
-
-.testimonial{
+.testimonial {
   text-align: justify;
 }
-
-.review{
-  min-height:250px;
-
+.review {
+  min-height: 250px;
 }
-.person{
+.person {
   height: 60px;
   width: 60px;
   background-color: rgb(160, 179, 239);
   border-radius: 50%;
   position: relative;
-
-
 }
-.user{
+.user {
   position: absolute;
   font-size: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
 }
-.testimonialbg{
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.8),   
-    rgba(0, 0, 0, 0.5) 
-  ), url('https://img.freepik.com/free-photo/medium-shot-doctors-wearing-protective-equipment_23-2149994405.jpg?t=st=1713955794~exp=1713959394~hmac=a8c88e8f8db20c8e15cc7c2dbe017d650468bb5e3366f3986af72b09352a3911&w=826');
+.testimonialbg {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/free-photo/medium-shot-doctors-wearing-protective-equipment_23-2149994405.jpg?t=st=1713955794~exp=1713959394~hmac=a8c88e8f8db20c8e15cc7c2dbe017d650468bb5e3366f3986af72b09352a3911&w=826");
   padding: 80px 0;
 
-  
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /* testimonials  end */
 
+.icon{
+  color: #ef1827;
+}
+.iconsbg{
+  background-color: azure;
+  border-radius: 50%;
+
+}
 
 @media (max-width: 567px) {
   .imglogo {
@@ -332,17 +325,28 @@ a {
   }
 
   /* doctor detais */
-.doctorimg{
-  width: 280px;
-  height: 280px;
+ .doctorimg{
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: skyblue;
-  margin-bottom:20px ;
+ 
 }
-.doctorimg img{
-  width: 100%;
-  height:100%;
-  object-fit: contain;
+.copyright{
+  font-size: 13px;
+  padding: 10px 0;
+}
+  
+}
 
+
+@media (min-width: 768px) {
+  /* doctor detais */
+ .doctorimg{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: skyblue;
 }
+  
 }
