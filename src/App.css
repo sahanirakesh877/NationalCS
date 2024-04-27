@@ -26,7 +26,7 @@ a {
 
 /* header design start */
 .imglogo {
-  height: 80px;
+  height: 90px;
   width: auto;
 }
 .imglogo img {
@@ -37,7 +37,7 @@ a {
 .logotext {
   color: var(--brandcolor);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 28px;
 }
 .logotext1 {
   color: var(--secBrand);
