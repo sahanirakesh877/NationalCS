@@ -25,8 +25,8 @@ const Header = () => {
             <div className="d-flex items-center justify-content-center imglogo ">
               <img src={logoImg} alt="Logo" className=" " />
               <div className="d-flex items-center justify-content-center flex-column imglogo  ">
-                <span className="  logotext">National Colorectal</span>
-                <span className="logotext1">Center</span>
+                <span className="  logotext">National Colorectal Center</span>
+                {/* <span className="logotext1">Center</span> */}
               </div>
             </div>
 
