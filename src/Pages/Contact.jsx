@@ -32,8 +32,8 @@ const Contact = () => {
               <div className="iconsbg   p-2">
                   <FaEnvelope className="icon fs-4 " />
                   </div>
-                  <p className="fs-5 lead ps-3 pt-2">
-                    Email: example@example.com
+                  <p className=" lead ps-3 contact-email pt-2">
+                    Email: nationalcolorectalcenter@gmail.com
                   </p>
                 </li>
                 <li className="py-2 d-flex justify-content-center  align-items-center flex-column   ">
@@ -41,7 +41,7 @@ const Contact = () => {
                 <FaPhone className="icon fs-4   " />
                
                 </div>
-                <p className="fs-5 lead pt-2">
+                <p className="contact-email lead pt-2">
                     Phone: +977-9861555976 <br />
                     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
                     +977-9817073670
@@ -52,7 +52,7 @@ const Contact = () => {
                 <div className="iconsbg   p-2">
                   <FaLocationArrow className="icon fs-4 " />
                   </div>
-                  <p className="fs-5 lead pt-2">
+                  <p className="contact-email lead pt-2">
                     Location : Everest Hospital,<br />
                     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  
                     New Baneshwor
@@ -63,12 +63,12 @@ const Contact = () => {
           </div>
           <div className="col-md-6">
             <h2 className="text-center pb-2">Contact Us</h2>
-            <p className="pb-2">
+            <p className="pb-2 text-center font-monospace  ">
               Feel free to reach out to us with any questions or concerns!
             </p>
             <form className=" p-2">
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">
+                <label htmlFor="name " className="form-label text-success">
                   Name:
                 </label>
                 <input

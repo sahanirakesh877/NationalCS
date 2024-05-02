@@ -60,10 +60,10 @@ const Footer = () => {
                 <FaPhoneAlt /> 9817073670 / 9861555976
                 </li>
                 
-                {/* <li className="lastfooter">
+             {/* <li className="lastfooter footer-email">
                 <FaEnvelope />{" "}
                   <span className="email-address">nationalcolorectalcenter @gmail.com</span>
-                </li> */}
+                </li>  */}
               </ul>
             </div>
           </div>

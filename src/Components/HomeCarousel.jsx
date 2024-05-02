@@ -20,7 +20,7 @@ const HomeCarousel = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="https://img.freepik.com/free-photo/different-doctors-doing-surgical-procedure-patient_23-2148962493.jpg?t=st=1713771364~exp=1713774964~hmac=e5ff70c35ea823524439c95f04a4df2aff15c04cb55d3e3dff59ac3ccb42089d&w=826"
+              src="https://img.freepik.com/premium-photo/surgeon-performs-surgery-remotely-using-modern-hologram-virtual-reality-technology_747026-1696.jpg?w=826"
               className="d-block w-100 img-fluid"
               alt="..."
             />

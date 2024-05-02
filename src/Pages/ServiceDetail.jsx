@@ -34,7 +34,7 @@ const ServiceDetail = () => {
         <div className="container py-5">
           <div className="row">
             <div className="col-md-6">
-              <h1 className="fs-1 text-primary fw-semibold  ">{title}</h1>
+              <h1 className="fs-1 service-title fw-semibold  ">{title}</h1>
               <div>
                 <img
                   alt="ecommerce"

@@ -1,5 +1,5 @@
 import drBinayImg from "/drBinay.png";
-import drRakeshImg from "/drRakesh.png";
+import drRakeshImg from "/bgremoveRakesh.png";
 import drRoshan from "/drRoshan.png";
 
 export const Doctordata = [
