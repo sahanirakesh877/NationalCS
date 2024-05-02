@@ -23,7 +23,9 @@ p {
 a {
   text-decoration: none;
 }
-
+.nav-item{
+  font-size: 16.5px;
+}
 /* header design start */
 .imglogo {
   height: 90px;
@@ -37,12 +39,12 @@ a {
 .logotext {
   color: var(--brandcolor);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 26px;
 }
 .logotext1 {
   color: var(--secBrand);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   margin-top: -10px;
 }
 .navlink {
@@ -95,6 +97,8 @@ a {
   top: 40px;
 }
 /* home carausel system  end */
+
+
 
 /* About section start  */
 .abouthead {
@@ -250,7 +254,7 @@ a {
 .logotextF1 {
   color: var(--secBrand);
   font-weight: 600;
-  font-size: 19px;
+  font-size: 18px;
 }
 .footerfirst {
   background-color: rgb(96, 96, 96);
@@ -260,7 +264,15 @@ a {
 }
 .lastfooter {
   color: rgb(226, 215, 215);
+
 }
+.email-address {
+  display: inline-block;
+  max-width: 200px; /* Adjust the maximum width as needed */
+
+  text-overflow: ellipsis; /* Add ellipsis for longer email addresses */
+}
+
 /* footer section end */
 
 /* testimonials start  */
@@ -302,10 +314,40 @@ a {
   border-radius: 50%;
 
 }
+.DoctorProfile{
+  color: #1e3a8a;
+}
+
+
+/* case study start */
+.caseicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconimg{
+  width: 80px;
+  height: 80px ;
+ 
+}
+.iconimg img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  color: #1e3a8a;
+}
+.casetitle{
+  color: #1e3a8a;
+  font-size: 17px;
+}
+
 
 @media (max-width: 567px) {
+  .navbar{
+    padding: 15px 6px;
+  }
   .imglogo {
-    height: 60px;
+    height: 38px;
     width: auto;
   }
   .imglogo img {
@@ -315,13 +357,16 @@ a {
   }
   .logotext {
     color: rgb(0, 0, 189);
-    font-weight: 800;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 13px;
   }
   .logotext1 {
     color: rgb(252, 2, 2);
-    font-weight: 800;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .ncrc{
+    color: rgb(252, 2, 2);
   }
 
   /* doctor detais */

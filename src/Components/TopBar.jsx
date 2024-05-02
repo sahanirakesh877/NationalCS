@@ -1,4 +1,5 @@
 import React from "react";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 import {
   
   FaInstagram,
@@ -22,7 +23,7 @@ const TopBar = () => {
                   style={{ color: "var(--secBrand)" }}
                 />{" "}
                 <span style={{ color: "var(--brandcolor)" }}>
-                  example@example.com
+                 nationalcolorectalcenter@gmail.com
                 </span>
               </span>
               <span>
@@ -30,14 +31,14 @@ const TopBar = () => {
                   className="me-1"
                   style={{ color: "var(--secBrand)" }}
                 />{" "}
-                <span style={{ color: "var(--brandcolor)" }}>98458736423</span>
+                <span style={{ color: "var(--brandcolor)" }}>9817073670 / 9861555976</span>
               </span>
             </div>
 
             <div className="social-icons  d-flex gap-2 align-items-center  justify-content-center ">
               <div className="icons">
                 {" "}
-                <FaFacebookF />
+                <a href="https://www.facebook.com/ncrcnep"><FaFacebookF /></a>
               </div>
 
               <div className="icons">
@@ -48,6 +49,12 @@ const TopBar = () => {
               </div>
               <div className="icons">
                 <FaTwitter/>
+              </div>
+              <div className="icons">
+                <FaYoutube/>
+              </div>
+              <div className="icons">
+                <FaTiktok/>
               </div>
             </div>
           </div>

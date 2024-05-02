@@ -52,6 +52,21 @@ const Testimonial = () => {
         outcome."
       </p>
     </div>,
+     <div className="review text-white border mx-2 d-flex flex-column  justify-content-center  align-items-center">
+     <div className="person ">
+       <FaUser className="user" />
+     </div>
+     <h5 className="text-center">Sudhira Ray</h5>
+
+     <p className="text-justify px-4 mx-2  testimonial">
+       {" "}
+       " I was hesitant to
+       undergo surgery. However, the team at National Colorectal Center made me
+       feel comfortable and confident in my decision. Their professionalism and
+       expertise exceeded my expectations, and I'm grateful for the positive
+       outcome."
+     </p>
+   </div>,
   ];
 
   const responsive = {

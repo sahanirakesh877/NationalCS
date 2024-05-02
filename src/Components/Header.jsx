@@ -3,11 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import logoImg from "/nccnepal.png";
 
 const Header = () => {
-  const navigate=useNavigate()
-  const appointment=()=>{
-    navigate('/appointment')
-
-  }
+  const navigate = useNavigate();
+  const appointment = () => {
+    navigate("/appointment");
+  };
 
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleNavToggle = () => {
@@ -21,12 +20,12 @@ const Header = () => {
     <>
       <div className="">
         <nav className="navbar navbar-expand-lg  shadow">
-          <div className="container ">
+          <div className="container-fluid ">
             <div className="d-flex items-center justify-content-center imglogo ">
               <img src={logoImg} alt="Logo" className=" " />
               <div className="d-flex items-center justify-content-center flex-column imglogo  ">
                 <span className="  logotext">National Colorectal Center</span>
-                {/* <span className="logotext1">Center</span> */}
+                <span className="logotext1 font-monospace ">NCRC</span>
               </div>
             </div>
 
@@ -43,7 +42,7 @@ const Header = () => {
               <span className="navbar-toggler-icon" />
             </button>
             <div
-             className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
+              className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0  navlink">
@@ -52,30 +51,34 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item" onClick={closeNav}>
-                  <Link className="nav-link" to="/service">
-                    Service
-                  </Link>
-                </li>
-                <li className="nav-item" onClick={closeNav}>
+                <li className="nav-item " onClick={closeNav}>
                   <Link className="nav-link" to="/doctor">
-                   Doctor
+                    Doctors
                   </Link>
                 </li>
-                <li className="nav-item" onClick={closeNav}>
-                  <Link className="nav-link" to="/about">
-                    About
+                <li className="nav-item " onClick={closeNav}>
+                  <Link className="nav-link" to="/service">
+                    Colorectal Disease
                   </Link>
                 </li>
-                <li className="nav-item" onClick={closeNav}>
+
+                <li className="nav-item " onClick={closeNav}>
+                  <Link
+                    className="nav-link "
+                    to="/case"
+                  >
+                    Services
+                  </Link>
+                 
+                </li>
+
+                <li className="nav-item " onClick={closeNav}>
                   <Link className="nav-link" to="/contact">
                     Contact
                   </Link>
                 </li>
-               
               </ul>
               <div className="ms-md-4">
-              
                 <button className="btn  rounded-pill" onClick={appointment}>
                   Book Appointment
                 </button>

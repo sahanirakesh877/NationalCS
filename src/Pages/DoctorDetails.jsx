@@ -28,7 +28,8 @@ const DoctorDetails = () => {
       </Helmet>
    
      <div className="container mt-5">
-      <div className="row ">
+      <div className="row  border-bottom  shadow ">
+      <p className="text-center pb-5 pt-2 fs-4 fw-semibold font-monospace  DoctorProfile">Doctors Profile</p>
         <div className="col-md-6 pb-4 px-5  ">
         <div className=" doctorimg ">
           <img
@@ -50,10 +51,10 @@ const DoctorDetails = () => {
             <strong>Email:</strong> {doctor.email}
           </p>
           <p>
-            <strong>Experience:</strong> {doctor.experience} years
+            <strong>Experience:</strong> {doctor.experience} 
           </p>
           <p>
-            <strong>Designation:</strong> {doctor.Designation}
+            <strong>Designation:</strong> {doctor.designation}
           </p>
           <p>
             <strong>Degree:</strong>
@@ -74,7 +75,9 @@ const DoctorDetails = () => {
           </ul>
         </div>
       </div>
-      <div className="row mt-4 px-5">
+
+
+      <div className="row mt-5 px-5 ">
         <div className="col-md-6">
           <h3 className="text-uppercase  text-primary" >Journals:</h3>
           <hr  className="w-50 text-primary"/>
@@ -84,21 +87,10 @@ const DoctorDetails = () => {
                 <p>
                   <strong>Title:</strong> {journal.title}
                 </p>
-                <p>
-                  <strong>Publication:</strong> {journal.publication}
-                </p>
-                <p>
-                  <strong>Year:</strong> {journal.year}
-                </p>
-                <p>
-                  <strong>Volume:</strong> {journal.volume}
-                </p>
-                <p>
-                  <strong>Issue:</strong> {journal.issue}
-                </p>
-                <p>
-                  <strong>Pages:</strong> {journal.pages}
-                </p>
+               
+             
+                
+               
               </li>
             ))}
           </ul>
@@ -112,12 +104,8 @@ const DoctorDetails = () => {
                 <p>
                   <strong>Title:</strong> {award.title}
                 </p>
-                <p>
-                  <strong>Year:</strong> {award.year}
-                </p>
-                <p>
-                  <strong>Organization:</strong> {award.organization}
-                </p>
+              
+            
               </li>
             ))}
           </ul>

@@ -14,7 +14,7 @@ const Footer = () => {
                 <br />
               </div>
               <p className="logotextF">
-                National Colorectal <span className="logotextF1">Surgeon</span>
+                National Colorectal <span className="logotextF1">Center</span>
               </p>
             </div>
 
@@ -54,13 +54,16 @@ const Footer = () => {
             </div>
             <div className="col-md-3">
               <h5 className="text-uppercase text-white pb-2">Contact Us</h5>
-              <ul className="list-unstyled ">
+              <ul className="list-unstyled text-start ">
+             
                 <li className="lastfooter">
-                  <FaPhoneAlt /> +1 (123) 456-7890
+                <FaPhoneAlt /> 9817073670 / 9861555976
                 </li>
-                <li className="lastfooter">
-                  <FaEnvelope /> info@example.com
-                </li>
+                
+                {/* <li className="lastfooter">
+                <FaEnvelope />{" "}
+                  <span className="email-address">nationalcolorectalcenter @gmail.com</span>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -31,7 +31,7 @@ const Service = () => {
 
       <div className="bg-body-tertiary py-5">
         <div className="container mx-auto  ">
-          <h2 className="serviceHead"> Explore Cases </h2>
+          <h2 className="serviceHead"> Explore Colorectal Disease </h2>
           <div className="row d-flex justify-content-between    ">
             {visibleCards.map((card, id) => (
               <div className="col-md-4  p-4   " key={id}>

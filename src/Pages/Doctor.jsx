@@ -35,6 +35,7 @@ const Doctor = () => {
                     <div>
                       <h3 className="text-center">{card.name}</h3>
                       <p className="text-center">{card.role}</p>
+                     
                       <div className="text-center">
                         <Link to={`/doctors/${card.id}`}>
                           <button className="px-4 py-1 rounded-pill btn">
@@ -53,7 +54,8 @@ const Doctor = () => {
                   <div className="social-links text-center mt-3 ">
                     <h5 className="drname">{card.name}</h5>
                     <p className="">{card.role}</p>
-                    <ul className="list-unstyled d-flex justify-content-center">
+                    <p className="text-center p-2 special icon fw-semibold ">{card.special}</p>
+                    <ul className="list-unstyled d-flex justify-content-center p-2">
                       <li className="me-3">
                         <a href="#" target="_blank">
                           <div className=" fbicons">

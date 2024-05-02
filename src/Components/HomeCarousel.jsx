@@ -14,7 +14,7 @@ const HomeCarousel = () => {
              <div className="carousel-caption position-absolute  d-flex justify-content-center align-items-center text-center">
             <div>
             <h1 className="display-4 fw-bold">Leading the Way in Colorectal Care</h1>
-              <p className="lead">Providing Exceptional Colorectal Surgical Care</p>
+              <p className="lead">Providing Exceptional Medical & Colorectal Surgical Care</p>
             </div>
           </div>
           </div>
@@ -26,8 +26,8 @@ const HomeCarousel = () => {
             />
             <div className="carousel-caption position-absolute  d-flex justify-content-center align-items-center text-center">
             <div>
-            <h1 className="display-4 fw-bold">Expert Care for Colorectal Conditions</h1>
-            <p className="lead">Your Journey to Wellness Starts Here</p>
+            <h1 className="display-4 fw-bold">Expert Care for Colorectal Diseases</h1>
+            <p className="lead">Your Journey to Wellness Starts From Here</p>
             </div>
           </div>
           </div>
@@ -39,8 +39,8 @@ const HomeCarousel = () => {
             />
             <div className="carousel-caption position-absolute  d-flex justify-content-center align-items-center text-center">
             <div>
-            <h1 className="display-4 fw-bold">Compassionate Care, Exceptional Results</h1>
-            <p className="lead">Where Your Health and Comfort Come First</p>
+            <h1 className="display-4 fw-bold">Dedicated Care With, Exceptional Results</h1>
+            <p className="lead">Where Your Health and Comfort Comes First</p>
             </div>
           </div>
           </div>

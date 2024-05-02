@@ -12,6 +12,7 @@ import ServiceDetail from "./Pages/ServiceDetail";
 import Footer from "./Components/Footer";
 import DoctorDetails from "./Pages/DoctorDetails";
 import Appointment from "./Pages/Appointment";
+import Case from "./Pages/Case";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/appointment" element={<Appointment />} />
+        <Route path="/case" element={<Case />} />
         <Route path="/doctors/:id" element={<DoctorDetails />} />
       </Routes>
       <Footer />
