@@ -74,6 +74,19 @@ a {
   color: var(--brandcolor);
   font-weight: bold;
 }
+.dropdown-item{
+  background-color: #1e3a8a;
+  color: white;
+  padding:  8px 35px;
+ 
+}
+.dropdown-menu{
+  margin-top: 32px !important;
+  border: 0;
+  padding: 0;
+}
+
+
 
 /* home carausel system  */
 .carousel-item {
@@ -110,7 +123,11 @@ a {
   font-weight: 400;
   text-align: justify;
 }
-
+.quotes{
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #1e3a8a;
+}
 /* About section end  */
 
 /* service section start */

@@ -12,6 +12,9 @@ const DoctorDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+  if (!doctor) {
+    return <div>No doctor found with ID: {id}</div>;
+  }
 
   return (
     <>
@@ -60,7 +63,7 @@ const DoctorDetails = () => {
               <strong>Designation:</strong> {doctor.designation}
             </p>
             <p>
-              <strong>Degree:</strong>
+              <strong>Degree:</strong>    
             </p>
             <ul className="ps-5">
               {doctor.Degree.map((degree, index) => (
@@ -76,6 +79,10 @@ const DoctorDetails = () => {
                 <li key={index}>{hospital}</li>
               ))}
             </ul>
+
+            <p>
+            {doctor.skill && <p>Skill & Training: {doctor.skill}</p>}
+            </p>
           </div>
         </div>
 
@@ -83,28 +90,32 @@ const DoctorDetails = () => {
           <div className="col-md-6">
             <h3 className="text-uppercase  service-title">Journals:</h3>
             <hr className="w-50 text-primary" />
-            <ul>
-              {doctor.Journals.map((journal, index) => (
-                <li key={index} className="py-1">
-                  <p>
-                    <strong>Title:</strong> {journal.title}
-                  </p>
-                </li>
-              ))}
-            </ul>
+          
+
+            {doctor.Journals && (
+              <>
+                <ul>
+                  {doctor.Journals.map((journal, index) => (
+                    <li key={index}>{journal.title}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
           <div className="col-md-6">
             <h3 className="text-uppercase service-title">Awards:</h3>
             <hr className="w-50 text-danger " />
-            <ul>
-              {doctor.Awards.map((award, index) => (
-                <li key={index} className="py-1">
-                  <p>
-                    <strong>Title:</strong> {award.title}
-                  </p>
-                </li>
-              ))}
-            </ul>
+            
+            {doctor.Awards && (
+              <>
+               
+                <ul>
+                  {doctor.Awards.map((award, index) => (
+                    <li key={index}>{award.title}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </div>
       </div>

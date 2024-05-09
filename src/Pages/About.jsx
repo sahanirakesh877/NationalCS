@@ -40,6 +40,11 @@ const About = () => {
               empower our patients with the knowledge and support they need to
               achieve optimal colorectal health care.
             </p>
+            <br />
+            <strong className="quotes">
+    "A good set of bowels is worth more to a man than any quality of brains"
+  
+  </strong>
             
             
           </div>
@@ -55,6 +60,7 @@ const About = () => {
               class="w-100 shadow-1-strong rounded mb-4 "
               alt="Boat on Calm Water"
             />
+    
           </div>
         </div>
       </div>

@@ -110,6 +110,8 @@ const Appointment = () => {
                     <option value="Dr.Rakesh Shah">Dr.Rakesh Shah</option>
                     <option value="Dr.Roshan Shah">Dr.Roshan Shah</option>
                     <option value="Dr.Binay Yadav">Dr.Binay Yadav</option>
+                    <option value="Dr.Dinesh Prasad Koirala">Dr.Dinesh Prasad Koirala</option>
+                    <option value="Dr.Rameshor Bhandari">Dr.Rameshor Bhandari</option>
                     {/* Add more options as needed */}
                   </select>
                 </div>
@@ -126,12 +128,21 @@ const Appointment = () => {
                     <option value="">Select Specialist</option>
 
                     <option value="Colorectal Surgeon">
-                      Colorectal Surgeon
+                    Colorectal Surgeon
                     </option>
                     <option value="Colorectal Surgeon">
-                      Colorectal Surgeon
+                    Gastrointerologies
                     </option>
-                    <option value="Pediatric Surgeon">Pediatric Surgeon</option>
+                    <option value="Colorectal Surgeon">
+                    Gastro
+                    </option>
+                    <option value="Colorectal Surgeon">
+                    Pediatric Surgeon
+                    </option>
+                    <option value="Colorectal Surgeon">
+                    Oncologiest
+                    </option>
+                    <option value="Pediatric Surgeon"> Hepatobiliary Surgeon</option>
                   </select>
                 </div>
               </div>

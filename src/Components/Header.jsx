@@ -51,11 +51,61 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item " onClick={closeNav}>
+
+
+                {/* <li className="nav-item " onClick={closeNav}>
                   <Link className="nav-link" to="/doctor">
-                    Doctors
+                    Find Doctors
                   </Link>
+                </li> */}
+                <li className="nav-item dropdown ">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Find Doctors
+                  </Link>
+                  <ul className="dropdown-menu   border-0 " aria-labelledby="navbarDropdown ">
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor " to="/doctor">
+                        Colorectal Surgeon
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/doctor">
+                       Gastrointerologies
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/doctor">
+                       Gastro
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/doctor">
+                     Pediatric Surgeon
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/doctor">
+                        Oncologiest
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/doctor">
+                       Hepatobiliary Surgeon
+                      </Link>
+                    </li>
+                    {/* Add more dropdown items as needed */}
+                  </ul>
                 </li>
+
+
+
                 <li className="nav-item " onClick={closeNav}>
                   <Link className="nav-link" to="/service">
                     Colorectal Disease
@@ -63,13 +113,9 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item " onClick={closeNav}>
-                  <Link
-                    className="nav-link "
-                    to="/case"
-                  >
+                  <Link className="nav-link " to="/case">
                     Services
                   </Link>
-                 
                 </li>
 
                 <li className="nav-item " onClick={closeNav}>
@@ -77,9 +123,15 @@ const Header = () => {
                     Contact
                   </Link>
                 </li>
+
+                <li className="nav-item " onClick={closeNav}>
+                  <Link className="nav-link" to="/caseStudy">
+                    Case Study
+                  </Link>
+                </li>
               </ul>
-              <div className="ms-md-4">
-                <button className="btn  rounded-pill" onClick={appointment}>
+              <div className="ms-md-4  ">
+                <button className="btn shadow  rounded-pill" onClick={appointment}>
                   Book Appointment
                 </button>
               </div>

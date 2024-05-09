@@ -1,28 +1,30 @@
 import drBinayImg from "/drBinay.png";
 import drRakeshImg from "/bgremoveRakesh.png";
 import drRoshan from "/drRoshan.png";
+import drDinesh from "/Dinesh.jpeg";
 
 export const Doctordata = [
+  // id -1
   {
     id: 1,
     name: "Dr. Rakesh Shah",
     phoneNo: "+977-9817073670",
-    email: "drrakeshshah@gmail.com",
+    email: "drakeshah@gmail.com",
     role: "Colorectal Surgeon",
     designation: "Consultant",
     img: drRakeshImg,
     special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
     Degree: [
-      "MBBS , SOMC , SYLHET Bangladesh",
-      "MS-Colorectal Suirgery , BSMMU, Dhaka",
-      "Advance Training LASER Proctology (India)",
+      "MBBS , SOMC , Sylhet Bangladesh",
+      "MS-Colorectal Suirgery , BSMMU, Dhaka,Bangladesh",
+     
     ],
-    experience: "8 years",
+    skill:"Advance Training LASER Proctology (India)",
+    experience: "12 years",
     WorkingHospitals: [
       "NAMS , Bir Hospital",
       "Nepal National Hospital , Kalanki",
       "FrontLine Hospital",
-      "Everest Hospital,  New Baneswor",
     ],
     Journals: [
       {
@@ -42,6 +44,8 @@ export const Doctordata = [
     ],
   },
 
+
+ // id -2
   {
     id: 2,
     name: "Dr.Binay Yadav",
@@ -81,6 +85,8 @@ export const Doctordata = [
     ],
   },
 
+
+ // id -3
   {
     id: 3,
     name: "Dr.Roshan Shah",
@@ -118,5 +124,57 @@ export const Doctordata = [
         title: "Outstanding Contribution to Surgical Education",
       },
     ],
+  },
+
+
+  // id no.4
+  {
+    id: 4,
+    name: "Dr.Dinesh Prasad Koirala",
+    phoneNo: "+977-9869188613",
+    email: "drdineshprasadkoirala61@gmail.com",
+    role: "Pediatric  Surgeon",
+    img: drDinesh,
+    special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
+    designation: "Consultant",
+    Degree: [
+      "MS Pediatric  Surgery ",
+    ],
+    experience: "7 years",
+    WorkingHospitals: [
+      "Tribhuwan University Teaching Hospital (TUTH)"
+    ],
+   
+    Awards: [
+      {
+        title: "International Young Surgeon award , Australia",
+      },
+      {
+        title: "Emerging  Surgeon , USA",
+      },
+    ],
+  },
+
+  
+  // id no.5
+  {
+    id: 5,
+    name: "Dr.Rameshor Bhandari",
+    phoneNo: "+977-9851119467",
+    email: "drrameshorbhandari@gmail.com",
+    role: "Colorectal  Surgeon",
+    img: drRoshan,
+    special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
+    designation: "Consultant Colorectal Surgeon",
+    Degree: [
+      "MS Colorectal Surgery from BSMMU",
+    ],
+    experience: "1 years",
+    WorkingHospitals: [
+      "Grande International Hospital",
+     
+    ],
+  
+   
   },
 ];
