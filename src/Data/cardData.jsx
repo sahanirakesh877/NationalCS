@@ -563,7 +563,7 @@ const cards = [
 
     //Polyp
     {
-        id: 10, //LEFT TO EDIT
+        id: 10, //LEFT  TO  EDIT
         image: polypImg,
         title: "Polyp",
         description:

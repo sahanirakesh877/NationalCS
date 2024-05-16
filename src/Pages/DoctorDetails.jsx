@@ -81,7 +81,7 @@ const DoctorDetails = () => {
             </ul>
 
             <p>
-            {doctor.skill && <p>Skill & Training: {doctor.skill}</p>}
+            {doctor.skill && <p><strong>Skill & Training:</strong> {doctor.skill}</p>}
             </p>
           </div>
         </div>

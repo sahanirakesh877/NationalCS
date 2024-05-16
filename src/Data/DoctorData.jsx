@@ -1,7 +1,7 @@
 import drBinayImg from "/drBinay.png";
-import drRakeshImg from "/bgremoveRakesh.png";
+import drRakeshImg from "/coloRakesh.png";
 import drRoshan from "/drRoshan.png";
-import drDinesh from "/Dinesh.jpeg";
+import drDinesh from "/coloDinesh.png";
 
 export const Doctordata = [
   // id -1
@@ -15,16 +15,17 @@ export const Doctordata = [
     img: drRakeshImg,
     special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
     Degree: [
-      "MBBS , SOMC , Sylhet Bangladesh",
-      "MS-Colorectal Suirgery , BSMMU, Dhaka,Bangladesh",
+      "MBBS  (SOMC) , Sylhet Bangladesh",
+      "MS-Colorectal Suirgery( BSMMU), Dhaka,Bangladesh",
      
     ],
     skill:"Advance Training LASER Proctology (India)",
     experience: "12 years",
     WorkingHospitals: [
-      "NAMS , Bir Hospital",
-      "Nepal National Hospital , Kalanki",
-      "FrontLine Hospital",
+      "NAMS , Bir Hospital , kathmandu",
+      "Nepal National Hospital , Kalanki,Kathmandu",
+      "FrontLine Hospital , Old Baneshwor, Kathmandu",
+      "Kavya Hospital , Janakpur Dham"
     ],
     Journals: [
       {
@@ -36,11 +37,9 @@ export const Doctordata = [
     ],
     Awards: [
       {
-        title: "Excellence in Colorectal Surgery",
+        title: "Outcome of Core out Fistulectomy with Anal Spincter Reconstruction and Primary Repair of Internal Opening in the Treatment of Complex Anal Fistula; A Experience of 30 Cases published in GAJMS as Co-author on 4th Aug,2022",
       },
-      {
-        title: "Outstanding Contribution to Surgical Education",
-      },
+     
     ],
   },
 
@@ -94,7 +93,7 @@ export const Doctordata = [
     email: "email",
     role: "Pediatric  Surgeon",
     img: drRoshan,
-    special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
+    special: "बाल शल्य चिकित्सा विशेषज्ञ।",
     designation: "Consultant",
     Degree: [
       "MBBS , SOMC , SYLHET Bangladesh",
@@ -135,7 +134,7 @@ export const Doctordata = [
     email: "drdineshprasadkoirala61@gmail.com",
     role: "Pediatric  Surgeon",
     img: drDinesh,
-    special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
+    special: "बाल शल्य चिकित्सा विशेषज्ञ।",
     designation: "Consultant",
     Degree: [
       "MS Pediatric  Surgery ",
@@ -163,7 +162,7 @@ export const Doctordata = [
     phoneNo: "+977-9851119467",
     email: "drrameshorbhandari@gmail.com",
     role: "Colorectal  Surgeon",
-    img: drRoshan,
+    
     special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
     designation: "Consultant Colorectal Surgeon",
     Degree: [

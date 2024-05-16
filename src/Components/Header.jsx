@@ -53,11 +53,7 @@ const Header = () => {
                 </li>
 
 
-                {/* <li className="nav-item " onClick={closeNav}>
-                  <Link className="nav-link" to="/doctor">
-                    Find Doctors
-                  </Link>
-                </li> */}
+              
                 <li className="nav-item dropdown ">
                   <Link
                     className="nav-link dropdown-toggle"
@@ -77,12 +73,12 @@ const Header = () => {
                     </li>
                     <li onClick={closeNav}>
                       <Link className="dropdown-item dropdowncolor" to="/doctor">
-                       Gastrointerologies
+                       Gastrointerologist
                       </Link>
                     </li>
                     <li onClick={closeNav}>
                       <Link className="dropdown-item dropdowncolor" to="/doctor">
-                       Gastro
+                       Gastro Surgeon
                       </Link>
                     </li>
                     <li onClick={closeNav}>
@@ -92,7 +88,7 @@ const Header = () => {
                     </li>
                     <li onClick={closeNav}>
                       <Link className="dropdown-item dropdowncolor" to="/doctor">
-                        Oncologiest
+                        Onchologist
                       </Link>
                     </li>
                     <li onClick={closeNav}>
@@ -106,10 +102,67 @@ const Header = () => {
 
 
 
-                <li className="nav-item " onClick={closeNav}>
-                  <Link className="nav-link" to="/service">
+                
+
+                <li className="nav-item dropdown ">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Colorectal Disease
                   </Link>
+                  <ul className="dropdown-menu   border-0 " aria-labelledby="navbarDropdown ">
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor " to="/service">
+                       Piles/Hemorrhoids
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                      Fissure-in-Ano
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                      Fistula in ANO
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                   Rectal Prolapse
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                       Pilonidal Sinus
+                      </Link>
+                    </li>
+                    <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                      Constipation
+                      </Link>
+                    </li>
+                     <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                     Colon Cancer
+                      </Link>
+                    </li>
+                      <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                   Rectal Cancer
+                      </Link>
+                    </li>
+                      <li onClick={closeNav}>
+                      <Link className="dropdown-item dropdowncolor" to="/service">
+                    IBD (UC & CD)
+                      </Link>
+                    </li>
+                    {/* Add more dropdown items as needed */}
+                  </ul>
                 </li>
 
                 <li className="nav-item " onClick={closeNav}>
@@ -119,16 +172,18 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item " onClick={closeNav}>
+                  <Link className="nav-link" to="/caseStudy">
+                    Case Study
+                  </Link>
+                </li>
+
+                <li className="nav-item " onClick={closeNav}>
                   <Link className="nav-link" to="/contact">
                     Contact
                   </Link>
                 </li>
 
-                <li className="nav-item " onClick={closeNav}>
-                  <Link className="nav-link" to="/caseStudy">
-                    Case Study
-                  </Link>
-                </li>
+                
               </ul>
               <div className="ms-md-4  ">
                 <button className="btn shadow  rounded-pill" onClick={appointment}>
