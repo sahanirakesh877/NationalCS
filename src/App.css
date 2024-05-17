@@ -77,7 +77,8 @@ a {
 .dropdown-item{
   background-color: #1e3a8a;
   color: white;
-  padding:  8px 35px;
+  padding:  8px 45px;
+ 
  
 }
 .dropdown-menu{
@@ -291,7 +292,7 @@ a {
   background-color: rgb(114, 137, 168);
 }
 .footerlist li a {
-  color: rgb(226, 215, 215);
+  color: rgb(240, 235, 235);
 }
 .lastfooter {
   color: rgb(226, 215, 215);
@@ -426,7 +427,14 @@ a {
 .contact-email{
   font-size: 15px;
 }
-
+.dropdown-menu{
+  margin-top: 5px !important;
+  border: 0;
+  padding: 0;
+}
+.dropdown-menu{
+border-radius: 10px;
+}
   
 }
 
@@ -480,7 +488,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   background-color: #f8f9fa;
 }

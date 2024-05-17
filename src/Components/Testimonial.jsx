@@ -11,7 +11,7 @@ const Testimonial = () => {
       <div className="person ">
         <FaUser className="user" />
       </div>
-      <h5 className="text-center ">Shristi Bhattarai</h5>
+      <h5 className="text-center ">Ugeswori Bhattarai</h5>
 
       <p className="text-justify px-4 mx-2 testimonial">
         After years of discomfort, I finally sought help for my colorectal
@@ -26,7 +26,7 @@ const Testimonial = () => {
       <div className="person ">
         <FaUser className="user" />
       </div>
-      <h5 className="text-center ">Prakash Lama</h5>
+      <h5 className="text-center ">Nima Lama</h5>
 
       <p className="text-justify px-4 mx-2  testimonial">
         "I can't thank the doctors at National Colorectal Center enough for
@@ -56,7 +56,7 @@ const Testimonial = () => {
      <div className="person ">
        <FaUser className="user" />
      </div>
-     <h5 className="text-center">Sudhira Ray</h5>
+     <h5 className="text-center">Sikshya  Ray</h5>
 
      <p className="text-justify px-4 mx-2  testimonial">
        {" "}
