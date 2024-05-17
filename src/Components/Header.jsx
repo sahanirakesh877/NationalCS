@@ -22,10 +22,12 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg  shadow">
           <div className="container-fluid ">
             <div className="d-flex items-center justify-content-center imglogo ">
-              <img src={logoImg} alt="Logo" className=" " />
+              <a href="/"><img src={logoImg} alt="Logo" className=" " /></a>
               <div className="d-flex items-center justify-content-center flex-column imglogo  ">
-                <span className="  logotext">National Colorectal Center</span>
+             
+                <a href="/"><span className="  logotext">National Colorectal Center</span></a>
                 <span className="logotext1 font-monospace ">NCRC</span>
+              
               </div>
             </div>
 

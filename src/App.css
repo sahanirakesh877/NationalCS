@@ -288,7 +288,7 @@ a {
   font-size: 18px;
 }
 .footerfirst {
-  background-color: rgb(96, 96, 96);
+  background-color: rgb(114, 137, 168);
 }
 .footerlist li a {
   color: rgb(226, 215, 215);
@@ -451,4 +451,44 @@ a {
 /* loader */
 .loader{
   height: 100vh;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.spinner-border-custom {
+  width: 6rem;
+  height: 6rem;
+  border-width: 0.4em;
+}
+.spinner-text {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #001eff;
+}
+
+
+
+
+/* page not found */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+.not-found-title {
+  font-size: 4rem;
+  color: #343a40;
+}
+.not-found-subtitle {
+  font-size: 1.5rem;
+  color: #6c757d;
 }

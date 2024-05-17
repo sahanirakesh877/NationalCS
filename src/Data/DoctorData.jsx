@@ -16,28 +16,27 @@ export const Doctordata = [
     special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
     Degree: [
       "MBBS  (SOMC) , Sylhet Bangladesh",
-      "MS-Colorectal Suirgery( BSMMU), Dhaka,Bangladesh",
+      "MS-Colorectal Surgery( BSMMU), Dhaka,Bangladesh",
      
     ],
     skill:"Advance Training LASER Proctology (India)",
     experience: "12 years",
     WorkingHospitals: [
       "NAMS , Bir Hospital , kathmandu",
+      "Everest Hospital , New Baneswor, Kathmandu",
       "Nepal National Hospital , Kalanki,Kathmandu",
       "FrontLine Hospital , Old Baneshwor, Kathmandu",
       "Kavya Hospital , Janakpur Dham"
     ],
     Journals: [
       {
-        title: "Current Advances in Colorectal Surgery",
+        title: "Outcome of Core out Fistulectomy with Anal Spincter Reconstruction and Primary Repair of Internal Opening in the Treatment of Complex Anal Fistula; A Experience of 30 Cases published in GAJMS as Co-author on 4th Aug,2022",
       },
-      {
-        title: "Innovations in LASER Proctology",
-      },
+    
     ],
     Awards: [
       {
-        title: "Outcome of Core out Fistulectomy with Anal Spincter Reconstruction and Primary Repair of Internal Opening in the Treatment of Complex Anal Fistula; A Experience of 30 Cases published in GAJMS as Co-author on 4th Aug,2022",
+        title: "South Asian Regional Countries Brilliance Award & Cultural Summit-2022 :  for being the first NMC registered Colorectal Surgeon of Nepal",
       },
      
     ],
@@ -49,22 +48,23 @@ export const Doctordata = [
     id: 2,
     name: "Dr.Binay Yadav",
     phoneNo: "+977-9861555976",
-    email: "email",
+    email: "yadavbinay338@gmail.com",
     role: "Colorectal Surgeon",
     img: drBinayImg,
     designation: "Consultant",
     special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
     Degree: [
-      "MBBS , SOMC , SYLHET Bangladesh",
-      "MS-Colorectal Suirgery , BSMMU, Dhaka",
+      "MBBS (SOMC), SYLHET Bangladesh",
+      "MS-Colorectal Suirgery (BSMMU), Dhaka",
       "Advance Training LASER Proctology (India)",
     ],
     experience: "8 years",
     WorkingHospitals: [
-      "NAMS , Bir Hospital",
-      "Nepal National Hospital , Kalanki",
-      "FrontLine Hospital",
+      "Everest Hospital , New Baneswor, Kathmandu",
+      "Nepal National Hospital , Kalanki,Kathmandu",
       "Everest Hospital,  New Baneswor",
+      "FrontLine Hospital , Old Baneshwor, Kathmandu",
+
     ],
     Journals: [
       {

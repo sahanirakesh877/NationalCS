@@ -14,6 +14,7 @@ import DoctorDetails from "./Pages/DoctorDetails";
 import Appointment from "./Pages/Appointment";
 import Case from "./Pages/Case";
 import Loader from "./Components/Loader";
+import PageNotFound from "./Pages/PageNotFound";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -43,6 +44,7 @@ useEffect(()=>{
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/case" element={<Case />} />
             <Route path="/doctors/:id" element={<DoctorDetails />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
         </>

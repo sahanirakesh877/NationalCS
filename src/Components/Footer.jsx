@@ -16,6 +16,7 @@ const Footer = () => {
               <p className="logotextF">
                 National Colorectal <span className="logotextF1">Center</span>
               </p>
+              <p className="fs-5 fw-bolder  text-white font-monospace mb-3">NCRC</p>
             </div>
 
             <div className="col-md-3">
@@ -39,16 +40,16 @@ const Footer = () => {
               <h5 className="text-uppercase text-white pb-2">Services</h5>
               <ul className="list-unstyled footerlist">
                 <li>
-                  <a href="#">Piles / Hemorrhoids</a>
+                  <a href="/service">Piles / Hemorrhoids</a>
                 </li>
                 <li>
-                  <a href="#">Colon / Rectal Cancer</a>
+                  <a href="/service">Colon / Rectal Cancer</a>
                 </li>
                 <li>
-                  <a href="#">Fissure / Fistula</a>
+                  <a href="/service">Fissure / Fistula</a>
                 </li>
                 <li>
-                  <a href="#">Rectal Prolapse</a>
+                  <a href="/service">Rectal Prolapse</a>
                 </li>
               </ul>
             </div>
@@ -60,10 +61,7 @@ const Footer = () => {
                 <FaPhoneAlt /> 9817073670 / 9861555976
                 </li>
                 
-             {/* <li className="lastfooter footer-email">
-                <FaEnvelope />{" "}
-                  <span className="email-address">nationalcolorectalcenter @gmail.com</span>
-                </li>  */}
+          
               </ul>
             </div>
           </div>
