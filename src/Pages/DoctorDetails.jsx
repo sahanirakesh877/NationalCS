@@ -37,7 +37,7 @@ const DoctorDetails = () => {
 
         <div className="row  border-bottom  shadow  p-4  ">
           <div className="col-md-6  pb-4 leftimg  d-flex justify-content-center  align-items-center  ">
-            <div className=" doctorimg  ">
+            <div className=" doctorimg  overflow-hidden  ">
               <img
                 src={doctor.img}
                 alt={doctor.name}
@@ -46,7 +46,7 @@ const DoctorDetails = () => {
             </div>
           </div>
           <div className="col-md-6 px-1 ">
-            <h2 className="fw-bold text-success">{doctor.name}</h2>
+            <h2 className="fw-bold text-success ">{doctor.name}</h2>
             <p>
               <strong>Specialist:</strong> {doctor.role}
             </p>
@@ -65,7 +65,7 @@ const DoctorDetails = () => {
             <p>
               <strong>Degree:</strong>    
             </p>
-            <ul className="ps-5">
+            <ul className="ps-md-5 ps-3">
               {doctor.Degree.map((degree, index) => (
                 <li key={index}>{degree}</li>
               ))}
@@ -74,7 +74,7 @@ const DoctorDetails = () => {
             <p>
               <strong>Working Hospitals:</strong>
             </p>
-            <ul className="ps-5">
+            <ul className="ps-md-5 ps-3">
               {doctor.WorkingHospitals.map((hospital, index) => (
                 <li key={index}>{hospital}</li>
               ))}
@@ -86,7 +86,7 @@ const DoctorDetails = () => {
           </div>
         </div>
 
-        <div className="row mt-5 px-5 ">
+        <div className="row mt-5  ">
           <div className="col-md-6">
             <h3 className="text-uppercase  service-title">Journals:</h3>
             <hr className="w-50 text-primary" />
@@ -94,9 +94,9 @@ const DoctorDetails = () => {
 
             {doctor.Journals && (
               <>
-                <ul>
+                <ul className="journerl     px-4">
                   {doctor.Journals.map((journal, index) => (
-                    <li key={index}>{journal.title}</li>
+                    <li key={index} >{journal.title}</li>
                   ))}
                 </ul>
               </>
@@ -109,7 +109,7 @@ const DoctorDetails = () => {
             {doctor.Awards && (
               <>
                
-                <ul>
+                <ul className="journerl px-4">
                   {doctor.Awards.map((award, index) => (
                     <li key={index}>{award.title}</li>
                   ))}

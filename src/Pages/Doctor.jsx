@@ -63,28 +63,28 @@ const Doctor = () => {
                     </p>
                     <ul className="list-unstyled d-flex justify-content-center p-2">
                       <li className="me-3">
-                        <a href="#" target="_blank">
+                        <a href="https://www.facebook.com/crs.drakeshah?mibextid=LQQJ4d" target="_blank">
                           <div className=" fbicons">
                             <FaFacebookF />
                           </div>
                         </a>
                       </li>
                       <li className="me-3">
-                        <a href="#" target="_blank">
+                        <a href="/" target="_blank">
                           <div className="fbicons">
                             <FaInstagram />
                           </div>
                         </a>
                       </li>
                       <li className="me-3">
-                        <a href="#" target="_blank">
+                        <a href="https://wa.me/+9779817073670" target="_blank">
                           <div className="fbicons">
                             <FaWhatsapp />
                           </div>
                         </a>
                       </li>
                       <li className="me-3">
-                        <a href="#" target="_blank">
+                        <a href="/" target="_blank">
                           <div className="fbicons">
                             <FaTwitter />
                           </div>

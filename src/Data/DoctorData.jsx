@@ -15,16 +15,16 @@ export const Doctordata = [
     img: drRakeshImg,
     special: "पेट,आन्द्रा,मलाशय तथा मलद्वार रोग विशेषज्ञ।",
     Degree: [
-      "MBBS  (SOMC) , Sylhet Bangladesh",
+      "MBBS  (SOMC), Sylhet,Bangladesh",
       "MS-Colorectal Surgery( BSMMU), Dhaka,Bangladesh",
      
     ],
     skill:"Advance Training LASER Proctology (India)",
     experience: "12 years",
     WorkingHospitals: [
-      "NAMS , Bir Hospital , kathmandu",
-      "Everest Hospital , New Baneswor, Kathmandu",
-      "Nepal National Hospital , Kalanki,Kathmandu",
+      "NAMS, Bir Hospital, kathmandu",
+      "Everest Hospital, New Baneswor, Kathmandu",
+      "Nepal National Hospital, Kalanki,Kathmandu",
       "FrontLine Hospital , Old Baneshwor, Kathmandu",
       "Kavya Hospital , Janakpur Dham"
     ],
@@ -61,7 +61,7 @@ export const Doctordata = [
     experience: "8 years",
     WorkingHospitals: [
       "Everest Hospital , New Baneswor, Kathmandu",
-      "Nepal National Hospital , Kalanki,Kathmandu",
+      "Nepal National Hospital , Kalanki, Kathmandu",
       "Everest Hospital,  New Baneswor",
       "FrontLine Hospital , Old Baneshwor, Kathmandu",
 
@@ -89,40 +89,26 @@ export const Doctordata = [
   {
     id: 3,
     name: "Dr.Roshan Shah",
-    phoneNo: "+977-9844023522",
+    phoneNo: "+977-9844520008",
     email: "email",
-    role: "Pediatric  Surgeon",
+    role: "Pediatric Surgeon",
     img: drRoshan,
     special: "बाल शल्य चिकित्सा विशेषज्ञ।",
     designation: "Consultant",
     Degree: [
-      "MBBS , SOMC , SYLHET Bangladesh",
-      "MS-Colorectal Suirgery , BSMMU, Dhaka",
-      "Advance Training LASER Proctology (India)",
+      "MBBS , JRRMC , SYLHET,Bangladesh",
+      "MS-Pediatrric Surgery, BSMMU, Dhaka",
+    
     ],
-    experience: "8 years",
+    experience: "7 years",
     WorkingHospitals: [
-      "NAMS , Bir Hospital",
-      "Nepal National Hospital , Kalanki",
-      "FrontLine Hospital",
-      "Everest Hospital,  New Baneswor",
+      "Kirtipur Hospital, Kirtipur",
+      "Nepal National Hospital, Kalanki",
+      "Bluecross Hospital, Tripureshwor",
+      
     ],
-    Journals: [
-      {
-        title: "Current Advances in Colorectal Surgery",
-      },
-      {
-        title: "Innovations in LASER Proctology",
-      },
-    ],
-    Awards: [
-      {
-        title: "Excellence in Colorectal Surgery",
-      },
-      {
-        title: "Outstanding Contribution to Surgical Education",
-      },
-    ],
+   
+ 
   },
 
 
