@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
-import { FaCheckCircle } from "react-icons/fa";
+import AboutImg from "/intestine.jpg"
 import { useLocation } from "react-router-dom";
 
 const About = () => {
@@ -49,13 +48,9 @@ const About = () => {
           </div>
 
           <div className="col-md-6 ">
-            {/* <img
-              src="https://img.freepik.com/premium-photo/human-heart-diagram-3d-illustration_857340-1016.jpg?w=826"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="Boat on Calm Water"
-            /> */}
+          
             <img
-              src="/intestine.jpg"
+              src={AboutImg}
               class="w-100 shadow-1-strong rounded mb-4 "
               alt="Boat on Calm Water"
             />

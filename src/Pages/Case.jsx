@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Casedata from "../Data/CaseData";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Case = () => {
   const { pathname } = useLocation();
@@ -35,20 +35,22 @@ const Case = () => {
                       <div className="iconimg">
                         <img
                           src={card.icon}
-                          className="img-fluid "
+                          className="img-fluid  "
                           alt={card.title}
                         />
                       </div>
                     </div>
                     <div className="col-md-8 py-2">
-                      <div className="card-body">
-                        <div className="">
-                          <h6 className=" fw-bold text-start casetitle ">
-                            {card.title}
-                          </h6>
-                          <p className="text-justify">{card.description}</p>
+                      <Link to={`/service/${card.id}`}>
+                        <div className="card-body">
+                          <div className="">
+                            <h6 className=" fw-bold text-start casetitle ">
+                              {card.title}
+                            </h6>
+                            <p className="text-justify">{card.description.slice(0,100)}. . . </p>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>

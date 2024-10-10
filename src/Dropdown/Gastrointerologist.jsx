@@ -1,3 +1,8 @@
+
+
+
+
+
 // Doctor.js
 import { useLocation } from "react-router-dom";
 import DoctorCard from "../Components/DoctorCard";
@@ -5,7 +10,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Doctordata } from "../Data/DoctorData";
 
-const Doctor = () => {
+const Gastrointerologist = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -20,9 +25,9 @@ const Doctor = () => {
       </Helmet>
       <div className="bg-body tertiary py-5">
         <div className="container mx-auto">
-          <h2 className="serviceHead">Specialist Doctors</h2>
+          <h2 className="serviceHead"> Gastroenterogist  Doctors</h2>
           <div className="row d-flex justify-content-start align-items-center">
-            {Doctordata.map((doctor) => (
+            {Doctordata.slice(5,6).map((doctor) => (
               <DoctorCard key={doctor.id} doctor={doctor} />
             ))}
           </div>
@@ -32,4 +37,4 @@ const Doctor = () => {
   );
 };
 
-export default Doctor;
+export default Gastrointerologist;

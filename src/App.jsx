@@ -15,14 +15,22 @@ import Appointment from "./Pages/Appointment";
 import Case from "./Pages/Case";
 import Loader from "./Components/Loader";
 import PageNotFound from "./Pages/PageNotFound";
+import CaseStudy from "./Pages/CaseStudy";
+import Colorectal from "./Dropdown/Colorectal";
+import Hepato from "./Dropdown/Hepato";
+import Onclologist from "./Dropdown/Onclologist";
+import Pediatric from "./Dropdown/Pediatric";
+import Gastro from "./Dropdown/Gastro";
+import Gastrointerologist from "./Dropdown/Gastrointerologist";
+import CaseDetails from "./Pages/CaseDetails";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-useEffect(()=>{
-  setTimeout(()=>{
-    setLoading(false);
-  },1000)
-})
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  });
 
   return (
     <>
@@ -37,14 +45,28 @@ useEffect(()=>{
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="/service/:id" element={<ServiceDetail />} />
+            <Route path="/disease" element={<Service />} />
+            <Route path="/disease/:id" element={<ServiceDetail />} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="/doctor" element={<Doctor />} />
+
             <Route path="/appointment" element={<Appointment />} />
-            <Route path="/case" element={<Case />} />
+            <Route path="/service" element={<Case />} />
+            <Route path="/service/:id" element={<CaseDetails/>} />
+            <Route path="/caseStudy" element={<CaseStudy />} />
             <Route path="/doctors/:id" element={<DoctorDetails />} />
             <Route path="*" element={<PageNotFound />} />
+
+            {/* doctors */}
+            <Route path="/doctor" element={<Doctor />} />
+            <Route path="/colorectal" element={<Colorectal />} />
+            <Route
+              path="/gastrointerologist"
+              element={<Gastrointerologist />}
+            />
+            <Route path="/gastro" element={<Gastro />} />
+            <Route path="/pediatric" element={<Pediatric />} />
+            <Route path="/oncologist" element={<Onclologist />} />
+            <Route path="/hepatobiliary" element={<Hepato />} />
           </Routes>
           <Footer />
         </>

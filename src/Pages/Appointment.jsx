@@ -1,7 +1,7 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-
 
 const Appointment = () => {
   const { pathname } = useLocation();
@@ -18,6 +18,7 @@ const Appointment = () => {
     selectedDate: "",
   };
   const [formData, setFormData] = useState(initialFormData);
+  const [formStatus, setFormStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -26,15 +27,37 @@ const Appointment = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  // Handle form submit
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    setFormData(initialFormData);
+    try {
+      console.log(formData);
+      const response = await axios.post(
+        `${import.meta.env.VITE_SERVERAPI}/api/v1/booking`,
+        formData
+      ); // Adjust the API URL based on your backend
+      console.log(response);
+      if (response.status === 200) {
+        setFormStatus("Success");
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+          selectedDoctor: "",
+          selectedSpecialist: "",
+          selectedDate: "",
+        });
+      }
+    } catch (error) {
+      setFormStatus("Error");
+      console.error("There was an error submitting the form:", error);
+    }
   };
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Appointment | NationalColorectalCenter</title>
         <meta
           name="description"
@@ -47,7 +70,9 @@ const Appointment = () => {
       </Helmet>
       <div className="appointment py-5">
         <div className="container">
-          <h3 className="text-center mb-2 text-white font-semibold">MAKE AN APPOINTMENT</h3>
+          <h3 className="text-center mb-2 text-white font-semibold">
+            MAKE AN APPOINTMENT
+          </h3>
           <p className="text-center">
             Book your appointment now to consult with our experienced doctors
             and receive personalized care tailored to your needs. Whether you're
@@ -110,8 +135,12 @@ const Appointment = () => {
                     <option value="Dr.Rakesh Shah">Dr.Rakesh Shah</option>
                     <option value="Dr.Roshan Shah">Dr.Roshan Shah</option>
                     <option value="Dr.Binay Yadav">Dr.Binay Yadav</option>
-                    <option value="Dr.Dinesh Prasad Koirala">Dr.Dinesh Prasad Koirala</option>
-                    <option value="Dr.Rameshor Bhandari">Dr.Rameshor Bhandari</option>
+                    <option value="Dr.Dinesh Prasad Koirala">
+                      Dr.Dinesh Prasad Koirala
+                    </option>
+                    <option value="Dr.Rameshor Bhandari">
+                      Dr.Rameshor Bhandari
+                    </option>
                     {/* Add more options as needed */}
                   </select>
                 </div>
@@ -128,21 +157,20 @@ const Appointment = () => {
                     <option value="">Select Specialist</option>
 
                     <option value="Colorectal Surgeon">
-                    Colorectal Surgeon
+                      Colorectal Surgeon
                     </option>
                     <option value="Colorectal Surgeon">
-                    Gastrointerologies
+                      Gastrointerologies
                     </option>
+                    <option value="Colorectal Surgeon">Gastro Surgeon</option>
                     <option value="Colorectal Surgeon">
-                    Gastro
+                      Pediatric Surgeon
                     </option>
-                    <option value="Colorectal Surgeon">
-                    Pediatric Surgeon
+                    <option value="Colorectal Surgeon">Oncologiest</option>
+                    <option value="Pediatric Surgeon">
+                      {" "}
+                      Hepatobiliary Surgeon
                     </option>
-                    <option value="Colorectal Surgeon">
-                    Oncologiest
-                    </option>
-                    <option value="Pediatric Surgeon"> Hepatobiliary Surgeon</option>
                   </select>
                 </div>
               </div>
@@ -183,6 +211,17 @@ const Appointment = () => {
               </div>
             </div>
           </form>
+          {formStatus && (
+              <p
+                className={`text-center mt-3 ${
+                  formStatus === "Success" ? "text-success" : "text-danger"
+                }`}
+              >
+                {formStatus === "Success"
+                  ? "Thank you! Your message has been sent."
+                  : "Sorry, there was an error. Please try again."}
+              </p>
+            )}
         </div>
       </div>
     </>

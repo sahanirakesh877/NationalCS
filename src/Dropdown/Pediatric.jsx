@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Doctordata } from "../Data/DoctorData";
 
-const Doctor = () => {
+const Pediatric = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -20,9 +20,9 @@ const Doctor = () => {
       </Helmet>
       <div className="bg-body tertiary py-5">
         <div className="container mx-auto">
-          <h2 className="serviceHead">Specialist Doctors</h2>
+          <h2 className="serviceHead"> Pediatric Specialist Doctors</h2>
           <div className="row d-flex justify-content-start align-items-center">
-            {Doctordata.map((doctor) => (
+            {Doctordata.slice(3, 5).map((doctor) => (
               <DoctorCard key={doctor.id} doctor={doctor} />
             ))}
           </div>
@@ -32,4 +32,4 @@ const Doctor = () => {
   );
 };
 
-export default Doctor;
+export default Pediatric;

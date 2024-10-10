@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Doctordata } from "../Data/DoctorData";
 
-const Doctor = () => {
+const Onclologist = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const Doctor = () => {
   );
 };
 
-export default Doctor;
+export default Onclologist;
